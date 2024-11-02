@@ -1,4 +1,4 @@
-// Selección de elementos
+
 const passwordField = document.getElementById('password');
 const uppercaseCheckbox = document.getElementById('uppercase');
 const lowercaseCheckbox = document.getElementById('lowercase');
@@ -7,13 +7,13 @@ const symbolsCheckbox = document.getElementById('symbols');
 const lengthField = document.getElementById('length');
 const generateButton = document.getElementById('generate');
 
-// Conjuntos de caracteres
+
 const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
 const numberChars = '0123456789';
 const symbolChars = '!@#$%^&*()_+~`|}{[]:;?><,./-=';
 
-// Función para generar contraseña
+
 function generatePassword() {
     let password = '';
     let possibleChars = '';
@@ -33,5 +33,5 @@ function generatePassword() {
     passwordField.value = password;
 }
 
-// Evento para generar contraseña
+
 generateButton.addEventListener('click', generatePassword);
